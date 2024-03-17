@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "09240a39-18ed-41c9-a7a3-c2a350fa0562",
+		"name": "Hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10567797"
+	},
+	"item": [
+		{
+			"name": "https://discoveryengine.googleapis.com/v1alpha/projects/154730555215/locations/global/collections/default_collection/dataStores/wf-pdf_1710576163575/servingConfigs/default_search:search",
+			"request": {
+				"auth": {
+					"type": "oauth2",
+					"oauth2": [
+						{
+							"key": "accessToken",
+							"value": "ya29.a0Ad52N38HWv-x-iUmOS8gsO1D1GvYakdGblngGj-6NQJJfafMM_Ab_b7RmBVlY_8nC40x5wEsfgyVt4-FfUrKbydoTOrj_lnCQVMARvqErpkgxL0UA3N2Nmn0P2U90z-ubSr9PuSlEvT96N0yy4wkg1u75JWNSyK3Nn4aCgYKAdwSARMSFQHGX2MiD6mXgK3kQcdnldy-Uk6OBQ0170",
+							"type": "string"
+						},
+						{
+							"key": "tokenName",
+							"value": "hackathontoken",
+							"type": "string"
+						},
+						{
+							"key": "tokenType",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "refresh_token",
+							"type": "any"
+						},
+						{
+							"key": "expires_in",
+							"value": 3595,
+							"type": "number"
+						},
+						{
+							"key": "token_id",
+							"value": "337e22fe-06cc-4218-957b-e047c22eaf6a",
+							"type": "string"
+						},
+						{
+							"key": "timestamp",
+							"value": 1710683812268,
+							"type": "number"
+						},
+						{
+							"key": "scope",
+							"value": "https://www.googleapis.com/auth/cloud-platform",
+							"type": "string"
+						},
+						{
+							"key": "useBrowser",
+							"value": true,
+							"type": "boolean"
+						},
+						{
+							"key": "headerPrefix",
+							"value": "Bearer",
+							"type": "string"
+						},
+						{
+							"key": "clientSecret",
+							"value": "*********",
+							"type": "string"
+						},
+						{
+							"key": "clientId",
+							"value": "********",
+							"type": "string"
+						},
+						{
+							"key": "accessTokenUrl",
+							"value": "https://oauth2.googleapis.com/token",
+							"type": "string"
+						},
+						{
+							"key": "authUrl",
+							"value": "https://accounts.google.com/o/oauth2/v2/auth",
+							"type": "string"
+						},
+						{
+							"key": "addTokenTo",
+							"value": "queryParams",
+							"type": "string"
+						},
+						{
+							"key": "id",
+							"value": "request/9307ba07-20ed-4ed2-bce6-07e03b6b3755/29ba1c6f-43ab-4e23-8a6c-27c39a57a069",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer $(gcloud auth print-access-token)"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"query\":\"what is the total electricity consumed in 2020\",\"pageSize\":10,\"queryExpansionSpec\":{\"condition\":\"AUTO\"},\"spellCorrectionSpec\":{\"mode\":\"AUTO\"},\"contentSearchSpec\":{\"summarySpec\":{\"summaryResultCount\":1,\"modelSpec\":{\"version\":\"stable\"},\"ignoreAdversarialQuery\":true,\"includeCitations\":true},\"snippetSpec\":{\"maxSnippetCount\":1,\"returnSnippet\":true}}}"
+				},
+				"url": {
+					"raw": "https://discoveryengine.googleapis.com/v1alpha/projects/154730555215/locations/global/collections/default_collection/dataStores/wf-pdf_1710576163575/servingConfigs/default_search:search",
+					"protocol": "https",
+					"host": [
+						"discoveryengine",
+						"googleapis",
+						"com"
+					],
+					"path": [
+						"v1alpha",
+						"projects",
+						"154730555215",
+						"locations",
+						"global",
+						"collections",
+						"default_collection",
+						"dataStores",
+						"wf-pdf_1710576163575",
+						"servingConfigs",
+						"default_search:search"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

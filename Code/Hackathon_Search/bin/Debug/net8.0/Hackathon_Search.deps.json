@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "Hackathon_Search/1.0.0": {
+        "runtime": {
+          "Hackathon_Search.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hackathon_Search/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

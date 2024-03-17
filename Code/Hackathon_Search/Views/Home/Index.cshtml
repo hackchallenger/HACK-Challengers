@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<!DOCTYPE html>
+<style>
+    .grecaptcha-badge {
+        visibility: hidden;
+    }
+</style>
+<html>
+<div>
+    <!-- Widget JavaScript bundle -->
+    <script src="https://cloud.google.com/ai/gen-app-builder/client?hl=en_US"></script>
+
+    <!-- Search widget element is not visible by default -->
+    <gen-search-widget configId="485f2d59-ae6e-48ab-9f00-16fae86e18ef"
+                       triggerId="searchWidgetTrigger">
+    </gen-search-widget>
+
+    <!-- Element that opens the widget on click. It does not have to be an input -->
+    <input placeholder="Search here" id="searchWidgetTrigger" />
+</div>
+<div>
+    <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+    <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+    <df-messenger project-id="wellsfargo-genai24-8166"
+                  agent-id="a7aaaaf5-64dd-4d15-9e75-6352c82b111b"
+                  language-code="en"
+                  max-query-length="-1">
+        <df-messenger-chat-bubble chat-title="Hackers">
+        </df-messenger-chat-bubble>
+    </df-messenger>
+    <style>
+        df-messenger {
+            z-index: 999;
+            position: fixed;
+            bottom: 16px;
+            right: 16px;
+        }
+    </style>
+</div>
+</html>
